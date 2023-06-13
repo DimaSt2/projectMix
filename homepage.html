@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>MaxMix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="/homepage.html" class="logo">
+               <img class="logo-img"src="/img/logo_main.jpg" width="70" height="70" alt="logo">     
+            </a>
+            <nav class="nav">
+                <a href="/homepage.html" class="nav-link active-link">Home</a>
+                <a href="#calc" class="nav-link">Mix</a>
+                <a href="/pages/FAQ.html" class="nav-link">FAQ</a>
+                <a href="/pages/contactUs.html" class="nav-link">Contact Us</a>
+             </nav>
+         </header>
+
+         <main class="main">
+            <div class="main-title">
+                <div class="main-title-descr">
+                    <h1>BITCOIN MIXER</h1>
+                    <div class="main-description">Innovative mixing technology brings anonymity to everyone.
+                        You are not required to use any other cryptocurrencies, because now Bitcoin can be fully anonymous.
+                    </div>
+                    <a href="#calc" class="toCalc">Get started</a>
+                </div>
+                <img class="main-img" src="/img/main.jpg" width="620" height="420" alt="title">
+            </div>
+            
+            <section class="steps">
+                <h2>SOME STEPS TO GET STARTED</h2>
+                    <div class="process">   
+                        <div class="content">
+                            <h3>Create order</h3> 
+                            <img src="/img/order.png" alt="order">
+                        </div>
+                        <img class="arrow" src="/img/arrow-25834.svg" alt="arrow">
+
+                        <div class="content">
+                            <h3>Send coins</h3> 
+                            <img src="/img/send.jpg" alt="send">
+                        </div>
+                        <img class="arrow" src="/img/arrow-25834.svg" alt="arrow">
+                        
+                        <div class="content">
+                            <h3>Wait for mixing</h3>    
+                            <img src="/img/mix.jpg" alt="mix">  
+                        </div>
+                        <img class="arrow" src="/img/arrow-25834.svg" alt="arrow">
+
+                        <div class="content">
+                            <h3>Get mixed coins</h3>   
+                            <img src="/img/final.jpg" alt="final">
+                        </div>
+                    </div> 
+            </section>
+
+            <section id="calc" class="calc">
+                <h2>CALCULATE AND APPRECIATE OUR LOW FEE</h2>
+                <div class="calc-wrapper">
+                    <div class="calc-value">
+                        <label class="h3" for="coin">Your coins</label>
+                        <input id="coin" type="number" form="wallet-form" placeholder="Enter your amount" required>
+                        <div>Min service fee: <span class="fee"></span></div>
+                        <div class="h3">Your total coin</div>
+                        <div class="amount">0</div>
+                    </div>
+                    <img class="calc-img" src="/img/calc.jpg" alt="calc">
+                </div>
+            </section>
+
+            <section id="mix"class="send">
+                <h2>START MIXER</h2>
+                <button class="btn-add">Add wallet</button>
+                <div class="send-wallet">
+                    <label class="h3" for="wallet">Your wallet address</label>
+                    <input id="wallet" class="wallet" form="wallet-form" required>
+                </div>
+                      <button class="btn-send" form="wallet-form">Send</button>
+                      <form action="#" id="wallet-form"></form>
+                    <div id="close" class="hidden new-wallet">
+                        <input class="wallet hidden-wallet" form="wallet-form" required>
+                        <img src="/img/close.jpg" class="close" alt="close">
+                    </div>
+            </section>
+         </main>
+         
+         <footer class="footer">
+            <div class="footer-links">
+                <a href="/homepage.html" class="nav-link active-link">Home</a>
+                <a href="/pages/FAQ.html" class="nav-link">FAQ</a>
+                <a href="/pages/contactUs.html" class="nav-link">Contact Us</a>
+            </div>
+            <div>©2023 MaxMix</div>
+         </footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #303d3a;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #b7d9b1;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #303d3a;
+}
+
+.logo {
+    border-radius: 50%;
+    margin-right: auto;
+}
+
+.nav {
+    display: flex;
+    column-gap: 50px;
+    padding-right: 100px;
+}
+
+.nav-link {
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover  {
+    color:  #fd5757 ;
+    transition: 0.2s linear;
+}
+
+.active-link {
+    color: #b7d9b1;
+    text-decoration: underline;
+}
+
+.logo-img {
+    border-radius: 50%;
+}
+
+/* End Header */
+
+/* Main-title styles */
+
+.main-title {
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 150px;  
+}
+
+.main-img{
+    padding: 45px 55px 0 0;
+}
+
+h1 {
+   color: #303d3a;
+   font-size: 50px;
+   margin-bottom: 50px;
+}
+
+.main-title-descr {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 550px;
+    text-align: center;
+}
+
+.main-description {
+    background-color: #303d3a;
+    color: white;
+    font-size: 25px;
+    text-indent: 15px;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 55px;
+}
+
+/* End - Main-title styles */
+
+/* section Steps  */
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+h2 {
+    color: #303d3a;
+    font-size: 35px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.h3 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.process {
+    display: flex;
+    background-color: #303d3a;
+    border-radius: 15px;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    max-height: 400px;
+    text-align: center;
+}
+
+.arrow {
+    width: 80px;
+    height: 80px;
+    transform: rotate(180deg);
+    align-self: center;
+}
+
+.content img {
+    max-width: 100%;
+    max-height: 200px;
+    margin: 15px;
+    border-radius: 15%;
+}
+
+/* End section Steps  */
+
+/* section calculate*/
+
+.calc, .send {
+    display: flex;
+    flex-direction: column;
+    color: #303d3a;
+    margin-bottom: 120px;
+}
+
+.calc-value {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    row-gap: 10px;
+    background-color: #303d3a;
+    padding: 25px;
+    color: white;
+    border-radius: 15px;
+}
+
+.calc-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calc-img {
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+#coin, .wallet, .amount, #name, #email, #message {
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+}
+
+/* End section calculate*/
+
+/* section send */
+
+.send-wallet, .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    row-gap: 10px;
+    background-color: #303d3a;
+    padding: 25px;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hidden-wallet {
+    width: 100%;
+}
+
+.new-wallet {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button, .toCalc {
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    font-size: 22px;
+    color:white;
+    background-color:  #021f7c;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+}
+
+.toCalc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-add {
+    margin-bottom: 15px;
+}
+
+
+button:hover, .toCalc:hover {
+    background-color:#fd5757;
+    transition: 0.2s linear;
+}
+
+/* End section send */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
+    background-color: #303d3a;
+}
+
+.footer-links {
+    display: flex;
+    align-self: flex-end;
+    column-gap: 50px;
+    padding: 10px 40px 0 0;
+}
+
+.footer-links .nav-link{
+    font-size: 20px;
+}
+
+/* page FAQ */
+
+.faq, .faq-img, .list, .list-item  {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq {
+    align-items: center;
+}
+
+.faq-wrapper {
+    display: flex;
+    margin-bottom: 100px;
+
+}
+
+.faq-img {
+    padding-top: 15px;
+    row-gap: 135px;
+}
+
+.question-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.list {
+    row-gap: 15px;
+}
+
+.list-item {
+    max-width: 700px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: #021f7c;
+    border-radius: 15px;
+    user-select: none;
+    font-size: 26px;
+}
+
+.title:hover {
+    background-color: #fd5757;
+    transition: 0.1s linear;
+}
+
+.list-content {
+    text-indent: 15px;
+    text-align: justify;
+    transition: all 0.8s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    color: white;
+    background-color: #303d3a;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.content-active {
+    opacity: 1;
+    overflow: visible;
+    max-height: 1000px;
+}
+
+/* End page FAQ */
+
+/* page CONTACT US */
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#message {
+    resize: none;
+    font: 20px 'Roboto Condensed', sans-serif;
+    min-height: 100px;
+}
+
+/* End page CONTACT US */
